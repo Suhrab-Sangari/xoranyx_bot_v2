@@ -27,7 +27,8 @@ class Config:
     }
     
     # Web App URL (بعداً پر می‌کنیم)
-    WEB_APP_URL = "https://your-webapp-url.here"
+    WEB_APP_URL = "https://suhrab-sangari.github.io/xoranyx-miniapp-v2/"
     
     # Database file
+
     DB_FILE = "data.json"
