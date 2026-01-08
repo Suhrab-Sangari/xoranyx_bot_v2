@@ -435,7 +435,7 @@ async def admin_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Main function
 def main():
     # Create application
-    application = Application.builder().token(Config.BOT_TOKEN).build()
+    application = Application.builder().token(Config.BOT_TOKEN).concurrent_updates(True).build()
     
     # Add handlers
     application.add_handler(CommandHandler("start", start_command))
@@ -452,4 +452,5 @@ def main():
     application.run_polling()
 
 if __name__ == "__main__":
+
     main()
